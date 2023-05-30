@@ -13,6 +13,8 @@ struct ContentView: View {
             skyBackground
                 .edgesIgnoringSafeArea(.all)
             City
+            forecast
+                .padding(.top, 135)
         }
     }
     
@@ -20,6 +22,15 @@ struct ContentView: View {
         MainWeatherView()
     }
     
+    var forecast: some View {
+        HStack(spacing: 8) {
+            DayWeatherView(weatherType: .windy, Day: .tuesday, temperature: 56)
+            DayWeatherView(weatherType: .sunny, Day: .wednesday, temperature: 89)
+            DayWeatherView(weatherType: .raining, Day: .thursday, temperature: 66)
+            DayWeatherView(weatherType: .partlyCloudy, Day: .friday, temperature: 78)
+            DayWeatherView(weatherType: .cloudy, Day: .saturday, temperature: 75)
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
