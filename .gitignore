@@ -1,0 +1,7 @@
+cmake-build-debug
+.idea
+build
+*.user.*
+*.user
+.DS_Store
+*.autosave
