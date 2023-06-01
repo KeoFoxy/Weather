@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var NightMode: Bool = false
+    
     var body: some View {
         ZStack {
-            skyBackground
+            background
                 .edgesIgnoringSafeArea(.all)
             City
             forecast
                 .padding(.top, 135)
+            DayButton
+                .padding(.bottom, 100)
         }
+    }
+    
+    var background: some View {
+        return NightMode ? dawnSky : daySky
     }
     
     var City: some View {
@@ -30,6 +38,10 @@ struct ContentView: View {
             DayWeatherView(weatherType: .partlyCloudy, Day: .friday, temperature: 78)
             DayWeatherView(weatherType: .cloudy, Day: .saturday, temperature: 75)
         }
+    }
+    
+    var DayButton: some View {
+        DayTimeButton(NightMode: $NightMode)
     }
 }
 
