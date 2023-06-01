@@ -9,12 +9,20 @@ import SwiftUI
 
 // Colors
 public let lightBlue:Color = Color(hex: "#AEE4FF")
+public let oceanBlue: Color = Color(hex: "#ADC0FF")
 public let daskBlue: Color = Color(hex: "#6A9CFD")
 public let piggiPink: Color = Color(hex: "#FFB8D0")
 public let skinPalePink: Color = Color(hex: "#FEE5E1")
+public let lemonYellow: Color = Color(hex: "#FFE2A0")
+public let peachRed: Color = Color(hex: "#FFA0A0")
+
 
 // Gradients
-public let skyBackground = LinearGradient(colors: [daskBlue, lightBlue],
+public let daySky = LinearGradient(colors: [daskBlue, lightBlue],
+                                          startPoint: .top,
+                                          endPoint: .bottom)
+
+public let dawnSky = LinearGradient(colors: [oceanBlue, oceanBlue, oceanBlue, oceanBlue, lightBlue, lemonYellow, peachRed],
                                           startPoint: .top,
                                           endPoint: .bottom)
 
