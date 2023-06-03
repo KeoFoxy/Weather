@@ -22,7 +22,7 @@ public let daySky = LinearGradient(colors: [daskBlue, lightBlue],
                                           startPoint: .top,
                                           endPoint: .bottom)
 
-public let dawnSky = LinearGradient(colors: [oceanBlue, oceanBlue, oceanBlue, oceanBlue, lightBlue, lemonYellow, peachRed],
+public let dawnSky = LinearGradient(colors: [.black, .gray],
                                           startPoint: .top,
                                           endPoint: .bottom)
 
