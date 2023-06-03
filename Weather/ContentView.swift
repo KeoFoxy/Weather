@@ -27,7 +27,9 @@ struct ContentView: View {
     }
     
     var City: some View {
-        MainWeatherView()
+        MainWeatherView(Location: "Cupertino, CA",
+                        Temperature: 76,
+                        WeatherIcon: "cloud.sun.fill")
     }
     
     var forecast: some View {
