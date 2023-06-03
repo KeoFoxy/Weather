@@ -2,7 +2,7 @@
 
 Simple realization of a weather app based on Apple's Weather.
 
-![preview](./img/preview.png)
+<img src="./img/preview.png" height=650>
 
 ### TODO
 
